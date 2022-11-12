@@ -1,40 +1,70 @@
 {
-    "user":[
-        {
-            "id": 1,
-            "nombre": "mateo",
-            "apellido": "agosta",
-            "dni": "40646099"
-
-        },
-        {
-            "id": 2,
-            "nombre": "leonardo",
-            "apellido": "agosta",
-            "dni": "20563211"
-
-        },
-        {
-            "id": 3,
-            "nombre": "mariel",
-            "apellido": "lobos",
-            "dni": "21563226"
-
-        },
-        {
-            "id": 4,
-            "nombre": "camila",
-            "apellido": "agosta",
-            "dni": "38652032"
-
-        },
-        {
-            "id": 5,
-            "nombre": "clara",
-            "apellido": "agosta",
-            "dni": "36025000"
-
-        }
-
-    ]
+  "user": [
+    {
+      "id": ":userId",
+      "nombre": "lusssasdasdsss",
+      "apellido": "agosta",
+      "dni": "48646235239",
+      "updateUser": "12/11/2022, 16:41:04"
+    },
+    {
+      "id": 2,
+      "nombre": "leonardo",
+      "apellido": "agosta",
+      "dni": "20563211"
+    },
+    {
+      "id": 3,
+      "nombre": "mariel",
+      "apellido": "lobos",
+      "dni": "21563226"
+    },
+    {
+      "id": 4,
+      "nombre": "camila",
+      "apellido": "agosta",
+      "dni": "38652032"
+    },
+    {
+      "id": 5,
+      "nombre": "lusssasdasdsss",
+      "apellido": "agosta",
+      "dni": "48646235239",
+      "updateUser": "12/11/2022, 17:11:30"
+    },
+    {
+      "id": 1,
+      "nombre": "Jorge",
+      "apellido": "agosta",
+      "dni": "406465749",
+      "ID": "04f2104e-0124-4916-ab78-f980ef003d1a",
+      "created": "12/11/2022, 16:06:42",
+      "updated": "12/11/2022, 16:06:42"
+    },
+    {
+      "id": 70,
+      "nombre": "mariano",
+      "apellido": "agosta",
+      "dni": "486465749",
+      "ID": "413d0fbc-3176-49c4-96e9-dbc622271c4a",
+      "created": "12/11/2022, 16:07:31",
+      "updated": "12/11/2022, 16:07:31"
+    },
+    {
+      "nombre": "luciano",
+      "apellido": "agosta",
+      "dni": "486465239",
+      "ID": "a1672fbb-1199-42b1-8ec9-57a3722e8665",
+      "created": "12/11/2022, 16:09:11",
+      "updated": "12/11/2022, 16:09:11"
+    },
+    {
+      "nombre": "lu",
+      "apellido": "agosta",
+      "dni": "48646235239",
+      "id": "687df444-117c-4d0a-8a73-afd9c471786e",
+      "created": "12/11/2022, 16:25:43",
+      "updated": "12/11/2022, 16:25:43"
+    }
+  ]
 }

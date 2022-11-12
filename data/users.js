@@ -26,8 +26,8 @@ const createNew = (newUser) => {
 
 }
 
-const updateOne = (userId, changes) => {
-    const updated = data.user.findIndex((user) => (user.id = userId));
+const updateOne = (id, changes) => {
+    const updated = data.user.findIndex((user) => (user.id == id));
     if (updated === -1) {
         return;
     }
@@ -42,14 +42,16 @@ const updateOne = (userId, changes) => {
     return updatedUser;
 }
 
-const deleteOne = (userId) => {  
+const deleteOne = (userId, res) => {  
     const indexForDeleted = data.user.findIndex((user) => user.id === userId);  // Revisar por las dudas
     
-    if (indexForDeleted === -1) {
-        return;
-    }
-    data.user.splice(indexForDeleted, 1);
-    saveToData(data);
+    if (indexForDeleted) {
+        let deleteById = data.user.filter((user) => user.id != userId);
+        return res.status(200).send({ deleteById });
+    }else
+        res.status(404).send({
+            message:"El usuario qgue intenta eliminar no existe en la base de datos",
+        });
 }
 
 module.exports = {getAll, getOne, createNew, updateOne, deleteOne};

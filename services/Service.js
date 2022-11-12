@@ -1,5 +1,5 @@
 const { v4 : uuid} = require('uuid');
-const Crud = require('../data/users');
+const users = require('../data/users');
 
 const getAll = () => {
     const all = users.getAll();
@@ -7,14 +7,14 @@ const getAll = () => {
 };
 
 const getOne = (userId) => {
-    const user = users.getOneCrud(userId);
+    const user = users.getOne(userId);
     return user;
 };
 
 const createNew = (newUser) => {
     const userToInsert = {
         ...newUser,
-        ID: uuid(),
+        id: uuid(),
         created: new Date().toLocaleString('Arg', { timeZone: 'UTC' }),
         updated: new Date().toLocaleString('Arg', { timeZone: 'UTC' }),
     };
@@ -29,7 +29,7 @@ const updateOne = (userId, changes) => {
 };
 
 const deleteOne = (userId) => {
-    users.deleteOneCrud(userId);
+    users.deleteOne(userId);
 
 }
 
